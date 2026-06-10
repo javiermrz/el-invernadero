@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Invernadero · Alta cocina verde · Madrid</title>
+<meta name="description" content="El Invernadero, restaurante con estrella Michelin de cocina vegetal del chef Rodrigo de la Calle en Madrid. Alta cocina verde, cercana y de temporada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Mulish:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-screen-label="Inicio">
+
+<!-- ===================== BARRA ===================== -->
+<header class="barra">
+  <div class="envoltura barra__envoltura">
+    <a class="logo" href="index.html" aria-label="El Invernadero · Madrid · Inicio">
+      <img class="logo__img" src="assets/img/logo-invernadero-oscuro.png" alt="El Invernadero · Madrid" width="289" height="40">
+    </a>
+    <nav class="nav nav__links" aria-label="Principal">
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="menus.html">Menús</a>
+      <a href="experiencia.html">Experiencia</a>
+      <a href="reservar.html" class="btn btn--primario" style="padding:.62em 1.2em;font-size:.86rem;">Reservar</a>
+      <a href="regala.html">Regala</a>
+      <a href="visitanos.html">Visítanos</a>
+    </nav>
+    <div class="idioma" aria-label="Idioma">
+      <button class="on" data-idioma="es">ES</button>
+      <button data-idioma="en">EN</button>
+    </div>
+    <button class="hamburguesa" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<!-- menú móvil -->
+<nav class="nav-movil" aria-label="Móvil">
+  <a href="index.html" class="activo"><span>Inicio</span><span class="num">01</span></a>
+  <a href="menus.html"><span>Menús</span><span class="num">02</span></a>
+  <a href="experiencia.html"><span>Experiencia</span><span class="num">03</span></a>
+  <a href="reservar.html"><span>Reservar</span><span class="num">04</span></a>
+  <a href="regala.html"><span>Regala</span><span class="num">05</span></a>
+  <a href="visitanos.html"><span>Visítanos</span><span class="num">06</span></a>
+</nav>
+
+<main>
+<!-- ===================== HERO ===================== -->
+<section class="hero azulejo" aria-label="Bienvenida">
+  <div class="envoltura"><div class="hero__interior">
+    <p class="eyebrow" style="color:var(--ambar);">Restaurante · Rodrigo de la Calle</p>
+    <h1 class="display reveal">Alta cocina<br><em class="acento" style="font-style:italic;color:var(--ambar);">verde</em></h1>
+    <p class="hero__sub reveal" data-d="1">La naturaleza vegetal como pilar. Verduras, hortalizas y hongos de temporada llevados a su máxima expresión.</p>
+    <div class="hero__cta reveal" data-d="2">
+      <a href="reservar.html" class="btn btn--primario btn--grande">Reservar mesa
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="menus.html" class="btn btn--linea-clara btn--grande">Descubre los menús</a>
+    </div>
+  </div></div>
+  <div class="hero__scroll" aria-hidden="true"><span>Baja</span><i></i></div>
+</section>
+
+<!-- ===================== PREMIOS ===================== -->
+<section class="premios" aria-label="Reconocimientos">
+  <div class="envoltura">
+    <div class="premios__lista">
+      <div class="premio reveal">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 18.6 5.9 21.4l1.4-6.8L2.2 9.9l6.9-.8z"/></svg>
+        <b>1 Estrella Michelin</b><span>Guía Michelin</span>
+      </div>
+      <div class="premio reveal" data-d="1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.5 5.4 5.9.7-4.4 4 1.2 5.8L12 16.7 6.8 18.9 8 13.1 3.6 9.1l5.9-.7z"/><path d="M12 9c0-1.6 1.2-2.6 2.6-2.6 0 1.6-1.2 2.6-2.6 2.6Z" fill="currentColor" stroke="none"/></svg>
+        <b>1 Estrella Verde</b><span>Gastronomía sostenible</span>
+      </div>
+      <div class="premio reveal" data-d="2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.6"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.2 5.2l1.7 1.7M17.1 17.1l1.7 1.7M18.8 5.2l-1.7 1.7M6.9 17.1l-1.7 1.7"/></svg>
+        <b>2 Soles Repsol</b><span>Guía Repsol</span>
+      </div>
+      <div class="premio reveal" data-d="3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V11"/><path d="M12 12C12 8 9 5.5 4.5 5.5 4.5 9.5 7.5 12 12 12Z"/><path d="M12 13.5c0-3.4 2.8-5.6 6.8-5.6 0 3.4-2.8 5.6-6.8 5.6Z"/></svg>
+        <b>#1 del Mundo</b><span>We're Smart · 5 Rábanos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== QUÉ ES ===================== -->
+<section class="seccion">
+  <div class="envoltura split">
+    <div class="col-prosa reveal">
+      <p class="eyebrow">Quiénes somos</p>
+      <h2 class="titulo-seccion">Un restaurante omnívoro<br>donde manda lo verde.</h2>
+      <p class="plomo">La naturaleza vegetal es el pilar fundamental de nuestra cocina. Respetamos el producto, aceptamos su temporalidad y nos dejamos llevar por los ciclos de las estaciones para obtener su máxima expresión.</p>
+      <p>Alta cocina verde, recuperación de especies vegetales y respeto al entorno son la base de nuestra propuesta. El Invernadero es un restaurante omnívoro donde la proteína animal participa como aderezo. Ofrecemos opciones sin gluten, para diabéticos y alérgenos en general; y un menú especial sin proteína animal para quienes siguen una dieta vegetariana o vegana.</p>
+    </div>
+    <div class="media reveal" data-d="1" style="min-height:440px;">
+      <!-- FOTO REAL: equipo de sala y cocina frente a la pared de azulejo verde -->
+      <img src="assets/img/equipo.jpg" alt="Equipo de El Invernadero frente a la pared de azulejo verde esmeralda, con estantería de cristalería y plantas" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+    </div>
+  </div>
+</section>
+
+<!-- divisor botánico -->
+<div class="envoltura"><div class="divisor-bot" aria-hidden="true">
+  <svg class="sprig" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V5"/><path d="M12 12c-1-3-4-4-6.5-3.4C5.6 11.2 8.7 12.6 12 12Z"/><path d="M12 9.5c1-3 4-3.6 6-2.9C17.3 8.8 14.8 10 12 9.5Z"/></svg>
+</div></div>
+
+<!-- ===================== CHEF ===================== -->
+<section class="seccion">
+  <div class="envoltura split">
+    <div class="media reveal" style="min-height:480px;order:-1;">
+      <!-- FOTO: chef Rodrigo de la Calle -->
+      <div class="ph" style="position:absolute;inset:0;" data-label="Retrato · Chef Rodrigo de la Calle"></div>
+    </div>
+    <div class="col-prosa reveal" data-d="1">
+      <p class="eyebrow">El chef</p>
+      <h2 class="titulo-seccion">Rodrigo<br>de la Calle</h2>
+      <p class="plomo">Pionero de la <em class="acento">gastrobotánica</em>: la disciplina que estudia y cocina el mundo vegetal con rigor y libertad. Una cocina de alto nivel que, lejos de la distancia, te trata como a alguien que ama comer y quiere descubrir algo nuevo.</p>
+      <p>Aquí no hay lujo distante. Hay producto, oficio y la curiosidad de quien lleva años recuperando especies y empujando los límites de lo verde.</p>
+      <a href="https://rodrigodelacalle.es" target="_blank" rel="noopener" class="btn btn--linea" style="margin-top:.6rem;">rodrigodelacalle.es
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AVANCE MENÚS ===================== -->
+<section class="seccion azulejo azulejo--bosque sobre-verde">
+  <div class="envoltura">
+    <div style="max-width:62ch;margin-bottom:clamp(2rem,4vw,3.4rem);" class="reveal">
+      <p class="eyebrow">Los menús</p>
+      <h2 class="titulo-seccion">Cuatro caminos,<br>una misma estación.</h2>
+      <p class="subtitulo">Dos degustaciones, vegetal y omnívora. Cada una, también en versión Experience con todo incluido.</p>
+    </div>
+    <div class="grid grid--4">
+      <article class="menu-card reveal">
+        <span class="menu-card__cinta"></span>
+        <p class="menu-card__tipo">Menú</p>
+        <h3>Vegetalia</h3>
+        <p class="menu-card__precio">158&nbsp;€<small> / pers.</small></p>
+        <p>Degustación de vegetales y hongos de temporada. Opción vegetariana o vegana.</p>
+        <a href="menus.html#vegetalia" class="btn btn--verde">Ver detalle</a>
+      </article>
+      <article class="menu-card menu-card--exp reveal" data-d="1">
+        <span class="menu-card__cinta"></span>
+        <p class="menu-card__tipo">Experience · todo incluido</p>
+        <h3>Vegetalia Experience</h3>
+        <p class="menu-card__precio">218&nbsp;€<small> / pers.</small></p>
+        <p>Vegetalia con maridaje, agua, pan, quesos e infusiones.</p>
+        <a href="menus.html#vegetalia-exp" class="btn btn--verde">Ver detalle</a>
+      </article>
+      <article class="menu-card reveal" data-d="2">
+        <span class="menu-card__cinta"></span>
+        <p class="menu-card__tipo">Menú</p>
+        <h3>Gastrobotánica</h3>
+        <p class="menu-card__precio">168&nbsp;€<small> / pers.</small></p>
+        <p>Vegetales, carnes ecológicas, pescado y marisco. Para omnívoros.</p>
+        <a href="menus.html#gastrobotanica" class="btn btn--verde">Ver detalle</a>
+      </article>
+      <article class="menu-card menu-card--exp reveal" data-d="3">
+        <span class="menu-card__cinta"></span>
+        <p class="menu-card__tipo">Experience · todo incluido</p>
+        <h3>Gastrobotánica Experience</h3>
+        <p class="menu-card__precio">228&nbsp;€<small> / pers.</small></p>
+        <p>Gastrobotánica con maridaje, agua, pan, quesos e infusiones.</p>
+        <a href="menus.html#gastrobotanica-exp" class="btn btn--verde">Ver detalle</a>
+      </article>
+    </div>
+    <p style="margin-top:1.6rem;color:#e9ddc4;font-size:.94rem;">Todos los comensales de la mesa toman el mismo menú. Indícanos cualquier alergia o restricción al reservar.</p>
+  </div>
+</section>
+
+<!-- ===================== MESA DEL CHEF ===================== -->
+<section class="seccion">
+  <div class="envoltura split">
+    <div class="col-prosa reveal">
+      <p class="eyebrow">La joya de la casa</p>
+      <h2 class="titulo-seccion">La Mesa<br>del Chef.</h2>
+      <p class="plomo">Junto a la cocina abierta. Un <em class="acento">omakase</em> en directo: el chef cocina y emplata cada plato delante de ti, con la charla y la cercanía como parte del menú.</p>
+      <p>Mesa compartida de 1 a 10 comensales, con separación entre reservas. La experiencia más distintiva de El Invernadero.</p>
+      <a href="experiencia.html" class="btn btn--primario" style="margin-top:.6rem;">Conoce la experiencia
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="media reveal" data-d="1" style="min-height:480px;">
+      <!-- FOTO REAL: la cocina abierta / mesa del chef contra el azulejo verde -->
+      <img src="assets/img/cocina-abierta.jpg" alt="La Mesa del Chef de El Invernadero: cocina abierta con cristalería de laboratorio y alambiques de cobre contra la pared de azulejo verde" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BANDA CTA ===================== -->
+<section class="banda azulejo seccion--ajustado sobre-verde" style="padding-top:clamp(56px,8vw,96px);padding-bottom:clamp(56px,8vw,96px);">
+  <div class="envoltura centro">
+    <p class="eyebrow solo" style="justify-content:center;color:var(--ambar);">Abierto martes a sábado</p>
+    <h2 class="titulo-seccion reveal" style="color:var(--blanco-roto);max-width:18ch;margin:0 auto 1.4rem;">Déjate llevar por la temporada.</h2>
+    <div class="hero__cta reveal" data-d="1" style="justify-content:center;">
+      <a href="reservar.html" class="btn btn--claro btn--grande">Reservar mesa</a>
+      <a href="visitanos.html" class="btn btn--linea-clara btn--grande">Cómo llegar</a>
+    </div>
+    <p style="margin-top:1.6rem;color:#e9ddc4;font-size:.9rem;">C/ de Ponzano, 85 · Chamberí, Madrid · Almuerzos 14:00 (sáb. y festivos) · Cenas 19:00 y 21:30</p>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="pie">
+  <div class="envoltura">
+    <div class="pie__top">
+      <div class="pie__logo">
+        <a class="logo" href="index.html" aria-label="El Invernadero · Madrid">
+          <img class="logo__img" src="assets/img/logo-invernadero-blanco.png" alt="El Invernadero · Madrid" width="289" height="40">
+        </a>
+        <p style="margin-top:1.2rem;font-size:.92rem;max-width:34ch;">Alta cocina verde del chef Rodrigo de la Calle. Verduras, hortalizas y hongos de temporada en el corazón de Chamberí.</p>
+      </div>
+      <div>
+        <h4>Visítanos</h4>
+        <ul>
+          <li>C/ de Ponzano, 85</li>
+          <li>28003 Madrid</li>
+          <li>Metro Ríos Rosas / Cuatro Caminos</li>
+          <li>Mar–Sáb · Cenas 19:00 y 21:30</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+34628939367">628 93 93 67</a></li>
+          <li><a href="mailto:reservas@elinvernaderorestaurante.com">reservas@elinvernadero…</a></li>
+          <li><a href="https://www.instagram.com/elinvernaderorestaurante" target="_blank" rel="noopener">@elinvernaderorestaurante</a></li>
+          <li><a href="reservar.html">Reservar</a> · <a href="regala.html">Regala</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Familia</h4>
+        <div class="pie__hermanas">
+          <a href="https://rodrigodelacalle.es" target="_blank" rel="noopener">Rodrigo de la Calle</a>
+          <a href="#">Paella Power</a>
+          <a href="#">Virens Barcelona</a>
+          <a href="#">Barbecho</a>
+        </div>
+      </div>
+    </div>
+    <div class="pie__bottom">
+      <span>© 2026 El Invernadero · Madrid</span>
+      <span><a href="#">Condiciones</a> · <a href="#">Privacidad</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== AJUSTES ===================== -->
+<button class="ajustes-btn" aria-label="Ajustes de diseño" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2.2"/><circle cx="8" cy="17" r="2.2"/></svg>
+</button>
+<aside class="ajustes" role="dialog" aria-label="Ajustes de diseño">
+  <p class="ajustes__t">Personaliza</p>
+  <h3 class="ajustes__s">Ajustes de diseño</h3>
+  <div class="ajustes__grupo">
+    <label>Verde del azulejo</label>
+    <div class="swatches" data-swatch="verde">
+      <button data-val="#2f8b4e" style="background:#2f8b4e" aria-label="Esmeralda"></button>
+      <button data-val="#1f6a3a" style="background:#1f6a3a" aria-label="Bosque"></button>
+      <button data-val="#2f8273" style="background:#2f8273" aria-label="Verde mar"></button>
+      <button data-val="#5a7e2c" style="background:#5a7e2c" aria-label="Oliva"></button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Acento cálido</label>
+    <div class="swatches" data-swatch="acento">
+      <button data-val="#c25e3a" style="background:#c25e3a" aria-label="Terracota"></button>
+      <button data-val="#a8612f" style="background:#a8612f" aria-label="Cobre"></button>
+      <button data-val="#bb8a3c" style="background:#bb8a3c" aria-label="Ámbar"></button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Serif de titulares</label>
+    <div class="seg" data-seg="serif">
+      <button data-val="Newsreader">Newsreader</button>
+      <button data-val="Cormorant">Cormorant</button>
+      <button data-val="Spectral">Spectral</button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Intensidad del azulejo</label>
+    <input type="range" min="0" max="10" step="1" data-slider="azulejo" aria-label="Intensidad del azulejo">
+  </div>
+  <div class="ajustes__grupo">
+    <label>Líneas botánicas</label>
+    <div class="seg" data-seg="botanica">
+      <button data-val="1">Sí</button>
+      <button data-val="0">No</button>
+    </div>
+  </div>
+  <button class="ajustes__reset">↺ Restablecer</button>
+</aside>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

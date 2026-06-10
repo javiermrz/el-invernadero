@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confirma tu reserva · El Invernadero</title>
+<meta name="description" content="Elige mesa, turno, fecha y número de comensales y confirma tu reserva en El Invernadero.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Mulish:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-screen-label="Reserva">
+
+<!-- ===================== BARRA ===================== -->
+<header class="barra">
+  <div class="envoltura barra__envoltura">
+    <a class="logo" href="index.html" aria-label="El Invernadero · Madrid · Inicio">
+      <img class="logo__img" src="assets/img/logo-invernadero-oscuro.png" alt="El Invernadero · Madrid" width="289" height="40">
+    </a>
+    <nav class="nav nav__links" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="menus.html">Menús</a>
+      <a href="experiencia.html">Experiencia</a>
+      <a href="reservar.html" class="btn btn--primario activo" style="padding:.62em 1.2em;font-size:.86rem;">Reservar</a>
+      <a href="regala.html">Regala</a>
+      <a href="visitanos.html">Visítanos</a>
+    </nav>
+    <div class="idioma" aria-label="Idioma">
+      <button class="on" data-idioma="es">ES</button>
+      <button data-idioma="en">EN</button>
+    </div>
+    <button class="hamburguesa" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="nav-movil" aria-label="Móvil">
+  <a href="index.html"><span>Inicio</span><span class="num">01</span></a>
+  <a href="menus.html"><span>Menús</span><span class="num">02</span></a>
+  <a href="experiencia.html"><span>Experiencia</span><span class="num">03</span></a>
+  <a href="reservar.html" class="activo"><span>Reservar</span><span class="num">04</span></a>
+  <a href="regala.html"><span>Regala</span><span class="num">05</span></a>
+  <a href="visitanos.html"><span>Visítanos</span><span class="num">06</span></a>
+</nav>
+
+<main>
+<!-- ===================== CABECERA ===================== -->
+<section class="cabecera azulejo azulejo--bosque sobre-verde" style="padding-bottom:clamp(32px,5vw,56px);">
+  <div class="envoltura">
+    <ol class="stepper" style="margin-bottom:1.6rem;">
+      <li><i>1</i> Menú elegido</li>
+      <span class="flecha" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </span>
+      <li class="on"><i>2</i> Mesa, turno y fecha</li>
+    </ol>
+    <p class="eyebrow">Último paso</p>
+    <h1 class="display" style="font-size:clamp(2.2rem,5vw,3.6rem);">Confirma tu reserva</h1>
+    <p class="hero__sub" style="margin-bottom:0;max-width:54ch;">Elige <em class="acento" style="color:var(--ambar);font-style:italic;">mesa, turno, fecha y número de comensales</em>. Recuerda indicar cualquier alergia o restricción.</p>
+  </div>
+</section>
+
+<!-- ===================== IFRAME COVERMANAGER ===================== -->
+<section class="cover-stage" style="padding:clamp(28px,5vw,56px) 0 clamp(40px,6vw,72px);">
+  <div class="envoltura">
+    <div class="cover-wrap">
+      <div class="cover-head">
+        <a href="reservar.html" class="cover-volver">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+          Cambiar de menú
+        </a>
+        <span class="cover-menu" data-cover-label>Reserva general</span>
+      </div>
+      <!-- El src se construye en site.js a partir de ?source= (módulo de reservas de CoverManager) -->
+      <iframe
+        class="cover-iframe"
+        data-cover
+        title="Sistema de reservas de El Invernadero"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allow="payment"></iframe>
+      <p style="margin:1.4rem 0 0;color:#9db3a3;font-size:.84rem;text-align:center;">¿Problemas con el formulario? Llámanos al <a href="tel:+34628939367" style="color:var(--ambar);text-decoration:underline;">628 93 93 67</a> o escribe a <a href="mailto:reservas@elinvernaderorestaurante.com" style="color:var(--ambar);text-decoration:underline;">reservas@elinvernaderorestaurante.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RECORDATORIO CONDICIONES ===================== -->
+<section class="seccion seccion--ajustado">
+  <div class="envoltura" style="max-width:860px;">
+    <div class="grid grid--2">
+      <div class="aviso reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+        <p><b>Tarjeta como garantía.</b> No se cobra nada salvo cancelación con menos de 24 h (48 h para viernes noche y sábado) o no presentación: 90 € por persona.</p>
+      </div>
+      <div class="aviso reveal" data-d="1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+        <p><b>Alergias y restricciones.</b> Indícalas al reservar. Tenemos opciones sin gluten, para diabéticos y menú sin proteína animal.</p>
+      </div>
+    </div>
+    <p style="margin-top:1.4rem;text-align:center;"><a href="reservar.html#condiciones" style="color:var(--cobre);text-decoration:underline;font-size:.92rem;">Ver todas las condiciones de reserva</a></p>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="pie">
+  <div class="envoltura">
+    <div class="pie__top">
+      <div class="pie__logo">
+        <a class="logo" href="index.html" aria-label="El Invernadero · Madrid">
+          <img class="logo__img" src="assets/img/logo-invernadero-blanco.png" alt="El Invernadero · Madrid" width="289" height="40">
+        </a>
+        <p style="margin-top:1.2rem;font-size:.92rem;max-width:34ch;">Alta cocina verde del chef Rodrigo de la Calle. Verduras, hortalizas y hongos de temporada en el corazón de Chamberí.</p>
+      </div>
+      <div>
+        <h4>Visítanos</h4>
+        <ul>
+          <li>C/ de Ponzano, 85</li>
+          <li>28003 Madrid</li>
+          <li>Metro Ríos Rosas / Cuatro Caminos</li>
+          <li>Mar–Sáb · Cenas 19:00 y 21:30</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+34628939367">628 93 93 67</a></li>
+          <li><a href="mailto:reservas@elinvernaderorestaurante.com">reservas@elinvernadero…</a></li>
+          <li><a href="https://www.instagram.com/elinvernaderorestaurante" target="_blank" rel="noopener">@elinvernaderorestaurante</a></li>
+          <li><a href="reservar.html">Reservar</a> · <a href="regala.html">Regala</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Familia</h4>
+        <div class="pie__hermanas">
+          <a href="https://rodrigodelacalle.es" target="_blank" rel="noopener">Rodrigo de la Calle</a>
+          <a href="#">Paella Power</a>
+          <a href="#">Virens Barcelona</a>
+          <a href="#">Barbecho</a>
+        </div>
+      </div>
+    </div>
+    <div class="pie__bottom">
+      <span>© 2026 El Invernadero · Madrid</span>
+      <span><a href="#">Condiciones</a> · <a href="#">Privacidad</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== AJUSTES ===================== -->
+<button class="ajustes-btn" aria-label="Ajustes de diseño" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2.2"/><circle cx="8" cy="17" r="2.2"/></svg>
+</button>
+<aside class="ajustes" role="dialog" aria-label="Ajustes de diseño">
+  <p class="ajustes__t">Personaliza</p>
+  <h3 class="ajustes__s">Ajustes de diseño</h3>
+  <div class="ajustes__grupo">
+    <label>Verde del azulejo</label>
+    <div class="swatches" data-swatch="verde">
+      <button data-val="#2f8b4e" style="background:#2f8b4e" aria-label="Esmeralda"></button>
+      <button data-val="#1f6a3a" style="background:#1f6a3a" aria-label="Bosque"></button>
+      <button data-val="#2f8273" style="background:#2f8273" aria-label="Verde mar"></button>
+      <button data-val="#5a7e2c" style="background:#5a7e2c" aria-label="Oliva"></button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Acento cálido</label>
+    <div class="swatches" data-swatch="acento">
+      <button data-val="#c25e3a" style="background:#c25e3a" aria-label="Terracota"></button>
+      <button data-val="#a8612f" style="background:#a8612f" aria-label="Cobre"></button>
+      <button data-val="#bb8a3c" style="background:#bb8a3c" aria-label="Ámbar"></button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Serif de titulares</label>
+    <div class="seg" data-seg="serif">
+      <button data-val="Newsreader">Newsreader</button>
+      <button data-val="Cormorant">Cormorant</button>
+      <button data-val="Spectral">Spectral</button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Intensidad del azulejo</label>
+    <input type="range" min="0" max="10" step="1" data-slider="azulejo" aria-label="Intensidad del azulejo">
+  </div>
+  <div class="ajustes__grupo">
+    <label>Líneas botánicas</label>
+    <div class="seg" data-seg="botanica">
+      <button data-val="1">Sí</button>
+      <button data-val="0">No</button>
+    </div>
+  </div>
+  <button class="ajustes__reset">↺ Restablecer</button>
+</aside>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

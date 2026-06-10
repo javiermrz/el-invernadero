@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Los Menús · El Invernadero · Alta cocina verde</title>
+<meta name="description" content="Los cuatro menús degustación de El Invernadero con precio y qué incluye: Vegetalia, Vegetalia Experience, Gastrobotánica y Gastrobotánica Experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Mulish:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Spectral:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-screen-label="Menús">
+
+<!-- ===================== BARRA ===================== -->
+<header class="barra">
+  <div class="envoltura barra__envoltura">
+    <a class="logo" href="index.html" aria-label="El Invernadero · Madrid · Inicio">
+      <img class="logo__img" src="assets/img/logo-invernadero-oscuro.png" alt="El Invernadero · Madrid" width="289" height="40">
+    </a>
+    <nav class="nav nav__links" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="menus.html" class="activo">Menús</a>
+      <a href="experiencia.html">Experiencia</a>
+      <a href="reservar.html" class="btn btn--primario" style="padding:.62em 1.2em;font-size:.86rem;">Reservar</a>
+      <a href="regala.html">Regala</a>
+      <a href="visitanos.html">Visítanos</a>
+    </nav>
+    <div class="idioma" aria-label="Idioma">
+      <button class="on" data-idioma="es">ES</button>
+      <button data-idioma="en">EN</button>
+    </div>
+    <button class="hamburguesa" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+<nav class="nav-movil" aria-label="Móvil">
+  <a href="index.html"><span>Inicio</span><span class="num">01</span></a>
+  <a href="menus.html" class="activo"><span>Menús</span><span class="num">02</span></a>
+  <a href="experiencia.html"><span>Experiencia</span><span class="num">03</span></a>
+  <a href="reservar.html"><span>Reservar</span><span class="num">04</span></a>
+  <a href="regala.html"><span>Regala</span><span class="num">05</span></a>
+  <a href="visitanos.html"><span>Visítanos</span><span class="num">06</span></a>
+</nav>
+
+<main>
+<!-- ===================== CABECERA ===================== -->
+<section class="cabecera azulejo azulejo--bosque sobre-verde">
+  <div class="envoltura">
+    <p class="eyebrow">Carta · Temporada</p>
+    <h1 class="display">Los Menús</h1>
+    <p class="hero__sub" style="margin-bottom:0;max-width:54ch;">Cuatro degustaciones que cambian al antojo de la naturaleza y el clima. <em class="acento" style="color:var(--ambar);font-style:italic;">Vegetal u omnívora, a la carta o con todo incluido.</em></p>
+  </div>
+</section>
+
+<!-- ===================== AVISO COMÚN ===================== -->
+<section class="seccion seccion--ajustado" style="padding-bottom:0;">
+  <div class="envoltura">
+    <div class="aviso reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      <p><b>Todos los comensales de la mesa toman el mismo menú.</b> Indícanos cualquier alergia o restricción al reservar y la adaptamos. Disponemos de opciones sin gluten, para diabéticos y alérgenos en general, además de un menú especial sin proteína animal (vegetariano / vegano).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GRUPO: MENÚS DEGUSTACIÓN ===================== -->
+<section class="seccion">
+  <div class="envoltura">
+    <div class="grupo-cab reveal">
+      <h2>Menús degustación</h2>
+      <span class="linea"></span>
+      <span class="nota">El menú</span>
+    </div>
+
+    <!-- VEGETALIA -->
+    <article class="menu-fila reveal" id="vegetalia">
+      <div class="menu-fila__cuerpo">
+        <p class="menu-fila__tipo">Menú degustación · base vegetal</p>
+        <h3>Vegetalia</h3>
+        <p class="menu-fila__precio">158&nbsp;€ <small>/ persona</small></p>
+        <p class="menu-fila__desc" style="margin-top:1.2rem;">Menú degustación cuya base son vegetales y hongos estacionales, que cambian al antojo de la naturaleza y el clima. La proteína animal se usa como aderezo en algunos platos.</p>
+        <div class="menu-fila__apto">
+          <span>Opción vegetariana</span>
+          <span>Opción vegana</span>
+          <span>Sin gluten</span>
+        </div>
+        <div class="acciones">
+          <a href="reservar.html?menu=Vegetalia" class="btn btn--verde">Reservar este menú
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="experiencia.html" class="btn btn--linea" style="font-size:.86rem;">Ver experiencias</a>
+        </div>
+      </div>
+      <div class="menu-fila__lado">
+        <h4>Pensado para</h4>
+        <ul class="incluye-lista">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Quien quiere descubrir la alta cocina verde en estado puro</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Vegetales y hongos de temporada como protagonistas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Adaptable a dieta vegetariana o vegana</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- GASTROBOTÁNICA -->
+    <article class="menu-fila reveal" id="gastrobotanica">
+      <div class="menu-fila__cuerpo">
+        <p class="menu-fila__tipo">Menú degustación · omnívoro</p>
+        <h3>Gastrobotánica</h3>
+        <p class="menu-fila__precio">168&nbsp;€ <small>/ persona</small></p>
+        <p class="menu-fila__desc" style="margin-top:1.2rem;">Menú degustación con vegetales, carnes, pescado y marisco: el especial para omnívoros. De estructura clásica, con verduras y hongos, carnes ecológicas y de granja, pescado y marisco. Apto para todo amante de la gastronomía.</p>
+        <div class="menu-fila__apto">
+          <span>Verduras y hongos</span>
+          <span>Carnes ecológicas</span>
+          <span>Pescado y marisco</span>
+        </div>
+        <div class="acciones">
+          <a href="reservar.html?menu=Gastrobotanica" class="btn btn--verde">Reservar este menú
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="experiencia.html" class="btn btn--linea" style="font-size:.86rem;">Ver experiencias</a>
+        </div>
+      </div>
+      <div class="menu-fila__lado">
+        <h4>Pensado para</h4>
+        <ul class="incluye-lista">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Quien busca una experiencia gastronómica completa, de estructura clásica</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Lo verde sigue mandando, con carne, pescado y marisco</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Producto ecológico y de granja</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== GRUPO: EXPERIENCE ===================== -->
+<section class="seccion" style="padding-top:0;">
+  <div class="envoltura">
+    <div class="grupo-cab reveal">
+      <h2>Experience</h2>
+      <span class="linea"></span>
+      <span class="nota">Todo incluido</span>
+    </div>
+    <div class="aviso aviso--calido reveal" style="margin-bottom:clamp(1.4rem,2.4vw,2rem);">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+      <p>El mismo menú degustación, pero <b>con todo incluido</b>: maridaje, agua, pan, quesos, café e infusiones. La forma de relajarte y dejarte llevar de principio a fin.</p>
+    </div>
+
+    <!-- VEGETALIA EXPERIENCE -->
+    <article class="menu-fila menu-fila--exp reveal" id="vegetalia-exp">
+      <div class="menu-fila__cuerpo">
+        <p class="menu-fila__tipo">Experience · todo incluido</p>
+        <h3>Vegetalia Experience</h3>
+        <p class="menu-fila__precio">218&nbsp;€ <small>/ persona</small></p>
+        <p class="menu-fila__desc" style="margin-top:1.2rem;">El menú degustación Vegetalia con maridaje, agua, pan, quesos, infusiones, etc. La opción para disfrutar de la experiencia verde total, sin pensar en nada más.</p>
+        <div class="acciones">
+          <a href="reservar.html?menu=VegetaliaExperience" class="btn btn--primario">Reservar este menú
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="menu-fila__lado">
+        <h4>Todo incluido</h4>
+        <ul class="incluye-lista">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Menú degustación Vegetalia</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Maridaje de vinos y bebidas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Agua, pan y quesos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Café e infusiones</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- GASTROBOTÁNICA EXPERIENCE -->
+    <article class="menu-fila menu-fila--exp reveal" id="gastrobotanica-exp">
+      <div class="menu-fila__cuerpo">
+        <p class="menu-fila__tipo">Experience · todo incluido</p>
+        <h3>Gastrobotánica Experience</h3>
+        <p class="menu-fila__precio">228&nbsp;€ <small>/ persona</small></p>
+        <p class="menu-fila__desc" style="margin-top:1.2rem;">El menú degustación Gastrobotánica con maridaje, agua, pan, quesos, infusiones, etc. La experiencia total de estructura clásica, de principio a fin.</p>
+        <div class="acciones">
+          <a href="reservar.html?menu=GastrobotanicaExperience" class="btn btn--primario">Reservar este menú
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="menu-fila__lado">
+        <h4>Todo incluido</h4>
+        <ul class="incluye-lista">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Menú degustación Gastrobotánica</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Maridaje de vinos y bebidas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Agua, pan y quesos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Café e infusiones</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- divisor botánico -->
+    <div class="divisor-bot reveal" style="margin-top:clamp(3rem,6vw,5rem);" aria-hidden="true">
+      <svg class="sprig" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V5"/><path d="M12 12c-1-3-4-4-6.5-3.4C5.6 11.2 8.7 12.6 12 12Z"/><path d="M12 9.5c1-3 4-3.6 6-2.9C17.3 8.8 14.8 10 12 9.5Z"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BANDA CTA ===================== -->
+<section class="banda azulejo seccion--ajustado sobre-verde" style="padding-top:clamp(56px,8vw,96px);padding-bottom:clamp(56px,8vw,96px);">
+  <div class="envoltura centro">
+    <p class="eyebrow solo" style="justify-content:center;color:var(--ambar);">¿Lo tienes claro?</p>
+    <h2 class="titulo-seccion reveal" style="color:var(--blanco-roto);max-width:20ch;margin:0 auto 1.4rem;">Elige tu menú y reserva en tres pasos.</h2>
+    <div class="hero__cta reveal" data-d="1" style="justify-content:center;">
+      <a href="reservar.html" class="btn btn--claro btn--grande">Empezar reserva</a>
+      <a href="experiencia.html" class="btn btn--linea-clara btn--grande">Conoce la Mesa del Chef</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="pie">
+  <div class="envoltura">
+    <div class="pie__top">
+      <div class="pie__logo">
+        <a class="logo" href="index.html" aria-label="El Invernadero · Madrid">
+          <img class="logo__img" src="assets/img/logo-invernadero-blanco.png" alt="El Invernadero · Madrid" width="289" height="40">
+        </a>
+        <p style="margin-top:1.2rem;font-size:.92rem;max-width:34ch;">Alta cocina verde del chef Rodrigo de la Calle. Verduras, hortalizas y hongos de temporada en el corazón de Chamberí.</p>
+      </div>
+      <div>
+        <h4>Visítanos</h4>
+        <ul>
+          <li>C/ de Ponzano, 85</li>
+          <li>28003 Madrid</li>
+          <li>Metro Ríos Rosas / Cuatro Caminos</li>
+          <li>Mar–Sáb · Cenas 19:00 y 21:30</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+34628939367">628 93 93 67</a></li>
+          <li><a href="mailto:reservas@elinvernaderorestaurante.com">reservas@elinvernadero…</a></li>
+          <li><a href="https://www.instagram.com/elinvernaderorestaurante" target="_blank" rel="noopener">@elinvernaderorestaurante</a></li>
+          <li><a href="reservar.html">Reservar</a> · <a href="regala.html">Regala</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Familia</h4>
+        <div class="pie__hermanas">
+          <a href="https://rodrigodelacalle.es" target="_blank" rel="noopener">Rodrigo de la Calle</a>
+          <a href="#">Paella Power</a>
+          <a href="#">Virens Barcelona</a>
+          <a href="#">Barbecho</a>
+        </div>
+      </div>
+    </div>
+    <div class="pie__bottom">
+      <span>© 2026 El Invernadero · Madrid</span>
+      <span><a href="#">Condiciones</a> · <a href="#">Privacidad</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== AJUSTES ===================== -->
+<button class="ajustes-btn" aria-label="Ajustes de diseño" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2.2"/><circle cx="8" cy="17" r="2.2"/></svg>
+</button>
+<aside class="ajustes" role="dialog" aria-label="Ajustes de diseño">
+  <p class="ajustes__t">Personaliza</p>
+  <h3 class="ajustes__s">Ajustes de diseño</h3>
+  <div class="ajustes__grupo">
+    <label>Verde del azulejo</label>
+    <div class="swatches" data-swatch="verde">
+      <button data-val="#2f8b4e" style="background:#2f8b4e" aria-label="Esmeralda"></button>
+      <button data-val="#1f6a3a" style="background:#1f6a3a" aria-label="Bosque"></button>
+      <button data-val="#2f8273" style="background:#2f8273" aria-label="Verde mar"></button>
+      <button data-val="#5a7e2c" style="background:#5a7e2c" aria-label="Oliva"></button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Acento cálido</label>
+    <div class="swatches" data-swatch="acento">
+      <button data-val="#c25e3a" style="background:#c25e3a" aria-label="Terracota"></button>
+      <button data-val="#a8612f" style="background:#a8612f" aria-label="Cobre"></button>
+      <button data-val="#bb8a3c" style="background:#bb8a3c" aria-label="Ámbar"></button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Serif de titulares</label>
+    <div class="seg" data-seg="serif">
+      <button data-val="Newsreader">Newsreader</button>
+      <button data-val="Cormorant">Cormorant</button>
+      <button data-val="Spectral">Spectral</button>
+    </div>
+  </div>
+  <div class="ajustes__grupo">
+    <label>Intensidad del azulejo</label>
+    <input type="range" min="0" max="10" step="1" data-slider="azulejo" aria-label="Intensidad del azulejo">
+  </div>
+  <div class="ajustes__grupo">
+    <label>Líneas botánicas</label>
+    <div class="seg" data-seg="botanica">
+      <button data-val="1">Sí</button>
+      <button data-val="0">No</button>
+    </div>
+  </div>
+  <button class="ajustes__reset">↺ Restablecer</button>
+</aside>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
