@@ -46,7 +46,7 @@
     // ocultar solo lo que está por debajo del pliegue
     var pendientes = [];
     els.forEach(function(el){
-      if(el.getBoundingClientRect().top > h*0.85){ el.classList.add('oculto'); pendientes.push(el); }
+      if(el.getBoundingClientRect().top > h){ el.classList.add('oculto'); pendientes.push(el); }
     });
     var ticking = false;
     function check(){
@@ -142,6 +142,15 @@
       if(source && MENU_LABELS[source]){ lbl.textContent = MENU_LABELS[source]; }
       else { lbl.textContent = 'Reserva general'; }
     }
+    window.addEventListener('message', function(e){
+      if(!e.data) return;
+      var h = null;
+      if(typeof e.data === 'number'){ h = e.data; }
+      else if(typeof e.data === 'object'){
+        h = e.data.height || e.data.frameHeight || e.data.iframeHeight || null;
+      }
+      if(h && h > 100){ f.style.height = h + 'px'; f.style.minHeight = '0'; }
+    }, false);
   }
 
   /* ---------- AJUSTES (panel propio) ---------- */
