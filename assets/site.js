@@ -84,7 +84,7 @@
       b.addEventListener('click', function(){
         if(b.dataset.idioma === 'en'){
           var prev = b.textContent;
-          b.textContent = 'pronto';
+          b.textContent = 'Soon';
           setTimeout(function(){ b.textContent = prev; }, 1300);
         }
       });
